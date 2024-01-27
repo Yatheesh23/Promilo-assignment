@@ -1,0 +1,70 @@
+.header-container {
+    width: 95%;
+    margin: .8em auto;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../../../../assets/headerBG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 5px 5px #03858140;
+    border-radius: 8px;
+}
+
+.logo-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navLogo {
+    width: 45%;
+    height: auto;
+}
+
+.smallLine {
+    border-left: 2px solid #038581;
+    height: 7vh;
+    margin: 0 0.3em;
+}
+
+.smallLine1 {
+    border-left: 2px solid white;
+    height: 6vh;
+    margin-right: 1.5em;
+}
+
+.profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+.searchInput {
+    padding: .8em;
+    width: 60%;
+    background: #03858140;
+    border-radius: 8px;
+    border: none;
+}
+
+.searchInput:focus {
+    outline: none;
+}

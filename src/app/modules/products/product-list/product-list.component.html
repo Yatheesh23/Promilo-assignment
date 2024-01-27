@@ -1,0 +1,28 @@
+<div class="main-container">
+    <div class="headerContainer">
+        <app-header (searchInputValue)="handleSearchInput($event)"></app-header>
+    </div>
+    <div class="productContainer">
+        <div *ngIf="initialProductList.length!==0" class="allPrd-container">
+            <div style="margin:2.3em;height: 30vh;width:28%;" *ngFor="let ele of initialProductList">
+                <mat-card (click)="toNavigate()" class="product-card">
+                    <mat-card-header class="cardHeader">
+                        <div class="product-title"> <mat-card-title> {{
+                                ele.productCategory.productCategoryName
+                                }}</mat-card-title>
+                        </div>
+                        <div class="product-image">
+                            <img src="{{ ele.productCategory.productCategoryImage }}"
+                                alt="{{ ele.productCategory.productCategoryName  }}">
+                        </div>
+                    </mat-card-header>
+                </mat-card>
+            </div>
+        </div>
+        <div class="allPrd-container" style="display: flex;justify-content: center;align-items: center;"
+            *ngIf="initialProductList.length==0">
+            <h2>There is no searched product</h2>
+        </div>
+
+    </div>
+</div>
